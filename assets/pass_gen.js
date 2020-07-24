@@ -42,9 +42,14 @@ function generatePassword() {
         allowedString += alphaSpecial;
     }
     let passString = "";
-    for (let i = 0; i < passwordLength; i++) {
-        passString += allowedString[Math.floor(Math.random() * allowedString.length)]
+    if (allowedString === ""){
+        alert("Please Choose Some Characters to be Allowed");
+    } else {
+        for (let i = 0; i < passwordLength; i++) {
+            passString += allowedString[Math.floor(Math.random() * allowedString.length)]
+            // console.log(passString);
+        }
         console.log(passString);
+        return passString;
     }
-    return passString;
 }
