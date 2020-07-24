@@ -26,12 +26,7 @@ var alphaSpecial =  "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
 
 //password generator
 function generatePassword() {
-    let passwordLength = parseInt(prompt("How Long Would You Like Your Password?"))
-    let allowLower = confirm("Allow Lowercase?");
-    let allowUpper = confirm("Allow Uppercase?");
-    let allowNumber = confirm("Allow Numbers?");
-    let allowSpecial = confirm("Allow Special Characters?");
-
+    let passwordLength = passwordLengthInput.value;
     let allowedString = "";
 
     if (allowLower) {
