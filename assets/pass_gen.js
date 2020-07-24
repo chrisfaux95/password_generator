@@ -1,5 +1,10 @@
 // Assignment Code
-var generateBtn = document.querySelector("#generate");
+var generateBtn = document.getElementById("generate");
+var checkLower = document.getElementById("allowLowercase");
+var checkUpper = document.getElementById("allowUppercase");
+var checkNumbers = document.getElementById("allowNumbers");
+var checkSpecial = document.getElementById("allowSpecial");
+var passwordLengthInput = document.getElementById("passwordLength");
 
 // Write password to the #password input
 function writePassword() {
