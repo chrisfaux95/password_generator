@@ -29,19 +29,18 @@ function generatePassword() {
     let passwordLength = passwordLengthInput.value;
     let allowedString = "";
 
-    if (allowLower) {
+    if (checkLower.checked) {
         allowedString += alphaLower;
     }
-    if (allowUpper) {
+    if (checkUpper.checked) {
         allowedString += alphaUpper;
     }
-    if (allowNumber) {
+    if (checkNumbers.checked) {
         allowedString += alphaNumer;
     }
-    if (allowSpecial) {
+    if (checkSpecial.checked) {
         allowedString += alphaSpecial;
     }
-    // console.log(allowedString);
     let passString = "";
     for (let i = 0; i < passwordLength; i++) {
         passString += allowedString[Math.floor(Math.random() * allowedString.length)]
