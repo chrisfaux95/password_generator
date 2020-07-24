@@ -14,10 +14,10 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 //constants
-const alphaLower = "abcdefghijklmnopqrstuvwxyz";
-const alphaUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-const alphaNumer = "1234567890";
-const alphaSpecial =  "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
+var alphaLower = "abcdefghijklmnopqrstuvwxyz";
+var alphaUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var alphaNumer = "1234567890";
+var alphaSpecial =  "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
 
 //password generator
 function generatePassword() {
