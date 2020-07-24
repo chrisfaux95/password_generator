@@ -21,6 +21,31 @@
             <div class="card-body">
                 <textarea readonly id="password" placeholder="Your Secure Password"
                     aria-label="Generated Password"></textarea>
+                <div id="password-buttons">
+                    <form>
+                        <!-- Allowed Characters Checkboxes -->
+
+                        <!-- Allow Lowercase -->
+                        <input type="checkbox" id="allowLowercase" name="allowLowercase" value="allowLowercase" />
+                        <label for="allowLowercase">Allow Lowercase</label>
+
+                        <!-- Allow Uppercase -->
+                        <input type="checkbox" id="allowUppercase" name="allowUppercase" value="allowUppercase" />
+                        <label for="allowUppercase">Allow Uppercase</label>
+
+                        <!-- Allow Numbers -->
+                        <input type="checkbox" id="allowNumbers" name="allowNumbers" value="allowNumbers" />
+                        <label for="allowNumbers">Allow Numbers</label>
+
+                        <!-- Allow Special Characters -->
+                        <input type="checkbox" id="allowSpecial" name="allowSpecial" value="allowSpecial" />
+                        <label for="allowSpecial">Allow Special Characters</label>
+                        <hr>
+                        <!-- Password Length (between 8 and 128)-->
+                        <label>Password Length (between 8 and 128 characters):</label>
+                        <input type="number" id="passwordLength" name="passwordLength" min="8" max="128" value="8">
+                    </form>
+                </div>
             </div>
             <div class="card-footer">
                 <button id="generate" class="btn">Generate Password</button>
